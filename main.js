@@ -9,7 +9,7 @@ function sumAll(arr) {
   }
   return total;
 }
-console.log(sumAll([1, 4])); //->10
+//console.log(sumAll([1, 4])); //->10
 
 /* Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 Note: You can return the array with its elements in any order. */
@@ -23,7 +23,7 @@ function diffArray(arr1, arr2) {
   }
   return newArr;
 }
-console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
+//console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
 
 /* You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 Note: You have to use the arguments object. */
@@ -35,7 +35,7 @@ function destroyer(...args) {
   });
   return newArr;
 }
-console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
+//console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
 
 /* Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
 For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument. */
@@ -54,7 +54,7 @@ function whatIsInAName(collection, source) {
   });
   return matchingPairs
 }
-console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
+//console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
 
 /*Pig Latin is a way of altering English Words. The rules are as follows:
 - If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add ay to it.
@@ -71,7 +71,7 @@ function sumAll(arr) {
   }
   return total;
 }
-console.log(sumAll([1, 4])); //->10
+//console.log(sumAll([1, 4])); //->10
 
 /* Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 Note: You can return the array with its elements in any order. */
@@ -85,7 +85,7 @@ function diffArray(arr1, arr2) {
   }
   return newArr;
 }
-console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
+//console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
 
 /* You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 Note: You have to use the arguments object. */
@@ -97,7 +97,7 @@ function destroyer(...args) {
   });
   return newArr;
 }
-console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
+//console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
 
 /* Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
 For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument. */
@@ -116,7 +116,7 @@ function whatIsInAName(collection, source) {
   });
   return matchingPairs
 }
-console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
+//console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
 
 /*Pig Latin is a way of altering English Words. The rules are as follows:
 - If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add ay to it.
@@ -133,7 +133,7 @@ function sumAll(arr) {
   }
   return total;
 }
-console.log(sumAll([1, 4])); //->10
+//console.log(sumAll([1, 4])); //->10
 
 /* Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 Note: You can return the array with its elements in any order. */
@@ -147,7 +147,7 @@ function diffArray(arr1, arr2) {
   }
   return newArr;
 }
-console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
+//console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
 
 /* You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
 Note: You have to use the arguments object. */
@@ -159,7 +159,7 @@ function destroyer(...args) {
   });
   return newArr;
 }
-console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
+//console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
 
 /* Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
 For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument. */
@@ -178,7 +178,7 @@ function whatIsInAName(collection, source) {
   });
   return matchingPairs
 }
-console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
+//console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
 
 /*Pig Latin is a way of altering English Words. The rules are as follows:
 - If a word begins with a consonant, take the first consonant or consonant cluster, move it to the end of the word, and add ay to it.
@@ -214,7 +214,7 @@ function translatePigLatin(str) {
     return str + "ay";
   }
 }
-console.log(translatePigLatin("schwartz")); //->artzschway
+//console.log(translatePigLatin("schwartz")); //->artzschway
 
 /*Perform a search and replace on the sentence using the arguments provided and return the new sentence.
 First argument is the sentence to perform the search and replace on.
@@ -230,7 +230,7 @@ function myReplace(str, before, after) {
   }
   return str;
 }
-console.log(myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped")); //->"A quick brown fox Leaped over the lazy dog"
+//console.log(myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped")); //->"A quick brown fox Leaped over the lazy dog"
 
 /* Pairs of DNA strands consist of nucleobase pairs. Base pairs are represented by the characters AT and CG, which form building blocks of the DNA double helix.
 The DNA strand is missing the pairing element. Write a function to match the missing base pairs for the provided DNA strand. For each character in the provided string, find the base pair character. Return the results as a 2d array.
@@ -251,4 +251,32 @@ function pairElement(str) {
   }
   return pairedDNA;
 }
-console.log(pairElement("GCG")); //->[ [ 'G', 'C' ], [ 'C', 'G' ], [ 'G', 'C' ] ]
+//console.log(pairElement("GCG")); //->[ [ 'G', 'C' ], [ 'C', 'G' ], [ 'G', 'C' ] ]
+
+/*Find the missing letter in the passed letter range and return it.
+If all letters are present in the range, return undefined. */
+function letterIndex(str,c){ //Returns the index that char c occurs in string str
+  for(let i=0; i<str.length; i++){
+    if(str[i]===c){
+      return i;
+    }
+  }
+  return -1;
+}
+
+function charDiff(str,segment){ //Returns the difference between two strings assuming one char is different
+  for(let i=0; i<segment.length; i++){
+    if(!str.includes(segment[i])){
+      return segment[i];
+    }
+  }
+  return undefined;
+}
+
+function fearNotLetter(str) {
+  const alphabet = "abcdefghijklmnopqrstuvwxyz";
+  let segment = alphabet.slice(letterIndex(alphabet,str[0]),letterIndex(alphabet,str[str.length-1])+1);
+  let diff = charDiff(str,segment);
+  return diff;
+}
+//console.log(fearNotLetter("stvwx")); //->'u'
