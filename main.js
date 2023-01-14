@@ -24,3 +24,12 @@ function diffArray(arr1, arr2) {
   return newArr;
 }
 console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
+function destroyer(...args) {
+  let destroyArr = args.slice(1);
+  let oldArr = args.slice(0,1)[0];
+  let newArr = oldArr.filter( function(element){
+    return !destroyArr.includes(element);
+  });
+  return newArr;
+}
+console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
