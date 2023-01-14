@@ -231,3 +231,24 @@ function myReplace(str, before, after) {
   return str;
 }
 console.log(myReplace("A quick brown fox Jumped over the lazy dog", "Jumped", "leaped")); //->"A quick brown fox Leaped over the lazy dog"
+
+/* Pairs of DNA strands consist of nucleobase pairs. Base pairs are represented by the characters AT and CG, which form building blocks of the DNA double helix.
+The DNA strand is missing the pairing element. Write a function to match the missing base pairs for the provided DNA strand. For each character in the provided string, find the base pair character. Return the results as a 2d array.
+For example, for the input GCG, return [["G", "C"], ["C","G"], ["G", "C"]]
+The character and its pair are paired up in an array, and all the arrays are grouped into one encapsulating array. */
+function pairElement(str) {
+  let pairedDNA = [];
+  let pairs = {
+    'A': 'T',
+    'T': 'A',
+    'C': 'G',
+    'G': 'C'
+  };
+  for(let i=0; i<str.length; i++){
+    if(pairs.hasOwnProperty(str[i])){
+      pairedDNA.push([str[i],pairs[str[i]]]);
+    }
+  }
+  return pairedDNA;
+}
+console.log(pairElement("GCG")); //->[ [ 'G', 'C' ], [ 'C', 'G' ], [ 'G', 'C' ] ]
