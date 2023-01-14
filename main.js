@@ -24,6 +24,9 @@ function diffArray(arr1, arr2) {
   return newArr;
 }
 console.log(diffArray([1, 2, 3, 5, 8], [1, 2, 3, 4, 5])); //-> [8,4]
+
+/* You will be provided with an initial array (the first argument in the destroyer function), followed by one or more arguments. Remove all elements from the initial array that are of the same value as these arguments.
+Note: You have to use the arguments object. */
 function destroyer(...args) {
   let destroyArr = args.slice(1);
   let oldArr = args.slice(0,1)[0];
@@ -33,3 +36,22 @@ function destroyer(...args) {
   return newArr;
 }
 console.log(destroyer([1, 2, 3, 1, 2, 3], 2, 3)); //->[1,1]
+
+/* Make a function that looks through an array of objects (first argument) and returns an array of all objects that have matching name and value pairs (second argument). Each name and value pair of the source object has to be present in the object from the collection if it is to be included in the returned array.
+For example, if the first argument is [{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], and the second argument is { last: "Capulet" }, then you must return the third object from the array (the first argument), because it contains the name and its value, that was passed on as the second argument. */
+function whatIsInAName(collection, source) {
+  let matchingPairs = [];
+  collection.forEach( function(element){
+    let match = true;
+    for(let key in source){
+      if(!(element[key] === source[key])){
+        match = false;
+      }
+    }
+    if(match === true){
+      matchingPairs.push(element);
+    }
+  });
+  return matchingPairs
+}
+console.log(whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" })); //-> [{ first: 'Tybalt', last: 'Capulet' }]
